@@ -2,13 +2,158 @@
 title: SButton
 description: A reference on how to use the SButton
 ---
+import { Tabs, TabItem, Steps } from '@astrojs/starlight/components';
 
 import { SButton } from 'simple-material-ui-library'
 
-Here is a simple guide on how to use the SButton component
+Here is a simple guide on how to use the SButton component, and it's different props.
 
-## Further reading
+## Calling the component
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+This component accepts a children prop of type string, which is the text that will be displayed on the button.
 
-<SButton  size="medium">Hello</SButton>
+```jsx	
+import { SButton } from 'simple-material-ui-library'
+<SButton size="small">I'm a button</SButton>
+<SButton size="medium">I'm a button</SButton>
+<SButton size="large">I'm a button</SButton>
+```
+<SButton size="small">I'm a button</SButton>
+<SButton size="medium">I'm a button</SButton>
+<SButton size="large">I'm a button</SButton>
+
+## Props
+:::note
+All props are optional except for the children prop. This means that all the props have default values. 
+:::
+
+### Variants
+> The default value is "outlined"
+<Tabs>
+<TabItem label="outlined">
+```tsx
+<SButton variant="outlined">outlined</SButton>
+```
+<SButton variant="outlined">outlined</SButton>
+</TabItem>
+<TabItem label="contained">
+```tsx
+<SButton variant="contained">contained</SButton>
+```
+<SButton variant="contained">contained</SButton>
+</TabItem>
+<TabItem label="text">
+```tsx
+<SButton variant="text">text</SButton>
+```
+<SButton variant="text">text</SButton>
+</TabItem>
+
+</Tabs>
+
+### Sizes
+> The default value is "medium"
+
+<Tabs>
+<TabItem label="small">
+```tsx
+<SButton size="small">Small</SButton>
+```
+<SButton size="small">Small</SButton>
+</TabItem>
+<TabItem label="medium">
+```tsx
+<SButton size="medium">Medium</SButton>
+```
+<SButton size="medium">Medium</SButton>
+</TabItem>
+<TabItem label="large">
+```tsx
+<SButton size="large">Large</SButton>
+```
+<SButton size="large">Large</SButton>
+</TabItem>
+</Tabs>
+
+### Rounded
+> The default value is true
+
+<Tabs>
+<TabItem label="true">
+```tsx
+<SButton rounded>Rounded</SButton>
+```
+<SButton rounded>Rounded</SButton>
+</TabItem>
+<TabItem label="false">
+```tsx
+<SButton rounded={false}>Not Rounded</SButton>
+```
+<SButton rounded={false}>Not Rounded</SButton>
+</TabItem>
+</Tabs>
+
+### Disabled
+> The default value is false
+
+<Tabs>
+<TabItem label="true">
+```tsx
+<SButton disabled>Disabled</SButton>
+```
+<SButton disabled>Disabled</SButton>
+</TabItem>
+<TabItem label="false">
+```tsx
+<SButton disabled={false}>Not Disabled</SButton>
+```
+<SButton disabled={false}>Not Disabled</SButton>
+</TabItem>
+</Tabs>
+
+### FontColor
+> The default value is "white"
+
+<Tabs>
+<TabItem label="white">
+```tsx
+<SButton fontColor="white">White</SButton>
+```
+<SButton fontColor="white">White</SButton>
+</TabItem>
+<TabItem label="blue">
+```tsx
+<SButton fontColor="blue">blue</SButton>
+```
+<SButton fontColor="blue">Blue</SButton>
+</TabItem>
+</Tabs>
+
+
+
+### BorderColor
+> The default value is "blue"
+
+<Tabs>
+<TabItem label="blue">
+```tsx
+<SButton borderColor="blue">Blue</SButton>
+```
+<SButton borderColor="blue">Blue</SButton>
+</TabItem>
+<TabItem label="red">
+```tsx
+<SButton borderColor="red">Red</SButton>
+```
+<SButton borderColor="red">Red</SButton>
+</TabItem>
+</Tabs>
+
+### OnClick Function
+
+```tsx
+<SButton onClick={() => alert("Hello")}>Click Me</SButton>
+```
+
+
+

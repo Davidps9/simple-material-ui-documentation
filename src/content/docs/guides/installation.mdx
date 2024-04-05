@@ -2,7 +2,7 @@
 title: Quick Start
 description: A guide in my new Starlight docs site.
 ---
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Icon } from '@astrojs/starlight/components';
 
 
 
@@ -29,11 +29,20 @@ Install the package via npm or yarn:
     </TabItem>
 </Tabs>
 ### Tailwind
-Install Tailwind CSS, postcss and autoprefixer:
+If you don't have Tailwind CSS installed, you will need to install it with postcss and autoprefixer:
 
     ```bash
     npm install tailwindcss postcss autoprefixer
+
     ```
+:::note 
+In case you have Tailwind CSS installed, you can just install postcss and autoprefixer:
+
+    ```bash
+    npm install postcss autoprefixer
+    ```
+:::
+#### Tailwind Config
 Create a `tailwind.config.js` file in the root of your project:
 
     ```bash
@@ -43,15 +52,15 @@ Create a `tailwind.config.js` file in the root of your project:
 ### Tailwind SetUp
 Add the following code to your componets property in the `tailwind.config.js` file:
 
-    ```js
+    ```js title="tailwind.config.js" {2}
     content[..., 
     'node_modules/simple-material-ui-library/**/*.{html,js,jsx,ts,tsx}',
     ...],
     ```
-## Using TypeScript
+## Using TypeScript 
 If you are using TypeScript, you will need to add the following code to your `tsconfig.json` file:
 
-    ```json
+    ```json title="tsconfig.json" 
     {
     "target": "ESNext",
     "lib": [
