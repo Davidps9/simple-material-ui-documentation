@@ -4,21 +4,22 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
+		
 		starlight({
-			title: 'My Docs',
+			title: 'SMUL',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/davidps9/ui-library',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Quick Start',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
+						{ label: 'Installation', link: '/guides/installation/' },
 					],
 				},
 				{
-					label: 'Reference',
+					label: 'Usage',
 					autogenerate: { directory: 'reference' },
 				},
 			],

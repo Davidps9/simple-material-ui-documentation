@@ -1,0 +1,53 @@
+---
+title: Quick Start
+description: A guide in my new Starlight docs site.
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+
+Here is a guide on how to install the Simple Material UI Library, a simple and easy to use UI library for React applications.
+
+
+## Installation
+Install the package via npm or yarn:
+
+   ```bash
+    npm install simple-material-ui-library
+    ```
+
+### Tailwind
+Install Tailwind CSS, postcss and autoprefixer:
+
+    ```bash
+    npm install tailwindcss postcss autoprefixer
+    ```
+Create a `tailwind.config.js` file in the root of your project:
+
+    ```bash
+    npx tailwindcss init -p
+    ```
+
+### Tailwind SetUp
+Add the following code to your componets property in the `tailwind.config.js` file:
+
+    ```js
+    content[..., 
+    'node_modules/simple-material-ui-library/**/*.{html,js,jsx,ts,tsx}',
+    ...],
+    ```
+## Using TypeScript
+If you are using TypeScript, you will need to add the following code to your `tsconfig.json` file:
+
+    ```json
+    {
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext",
+    ],
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    }
+    ```
