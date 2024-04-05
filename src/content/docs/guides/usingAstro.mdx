@@ -2,6 +2,7 @@
 title: Using Astro
 description: A guide to integrate my library with Astro.
 ---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 Here is a guide on how to use the Simple Material UI Library with Astro applications.
 
@@ -24,6 +25,20 @@ After installing Tailwind you will need to configure your Tailwind enviroment as
 
 Install the package via npm or yarn:
 
+  <Tabs>
+<TabItem label="npm">
    ```bash
     npm install simple-material-ui-library
     ```
+    </TabItem>
+    <TabItem label="pnpm">
+   ```bash
+    pnpm install simple-material-ui-library
+    ```
+    </TabItem>
+    <TabItem label="yarn">
+   ```bash
+    yarn install simple-material-ui-library
+    ```
+    </TabItem>
+</Tabs>

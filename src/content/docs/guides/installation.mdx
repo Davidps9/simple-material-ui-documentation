@@ -2,6 +2,7 @@
 title: Quick Start
 description: A guide in my new Starlight docs site.
 ---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 
 
@@ -10,11 +11,23 @@ Here is a guide on how to install the Simple Material UI Library, a simple and e
 
 ## Installation
 Install the package via npm or yarn:
-
+<Tabs>
+<TabItem label="npm">
    ```bash
     npm install simple-material-ui-library
     ```
-
+    </TabItem>
+    <TabItem label="pnpm">
+   ```bash
+    pnpm install simple-material-ui-library
+    ```
+    </TabItem>
+    <TabItem label="yarn">
+   ```bash
+    yarn install simple-material-ui-library
+    ```
+    </TabItem>
+</Tabs>
 ### Tailwind
 Install Tailwind CSS, postcss and autoprefixer:
 
