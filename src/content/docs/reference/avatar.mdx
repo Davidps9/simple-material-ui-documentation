@@ -1,0 +1,123 @@
+---
+title: Simple Avatar
+description: SAvatar component documentation
+---
+import { Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+
+import { SAvatar } from 'simple-material-ui-library'
+
+Here is a simple guide on how to use the SAvatar component, and it's different props.
+
+## Calling the component
+
+This component accepts differents props of different types, if they are not passed to the component, they will be set to its default values.
+
+```tsx
+<SAvatar
+  src="https://www.w3schools.com/howto/img_avatar.png"
+  alt="Avatar"
+  size="medium"
+  name="John Doe"
+/>
+```
+<SAvatar
+  src="https://www.w3schools.com/howto/img_avatar.png"
+  alt="Avatar"
+  size="medium"
+    name="John Doe"
+/>
+
+## Props
+
+### src
+
+>The component expects a string as a source for the image. This prop is optional and if not passed, the component will not render any image.
+
+```tsx
+<SAvatar src="https://www.w3schools.com/howto/img_avatar.png"/>
+```
+<SAvatar src="https://www.w3schools.com/howto/img_avatar.png"/>
+
+### alt
+
+>The component expects a string as an alt for the image. This prop is optional and if not passed, the component will not render any alt.
+
+```tsx
+<SAvatar alt="Avatar"/>
+```
+<SAvatar alt="Avatar"/>
+
+### size
+
+>The component expects a string as a size for the avatar. This prop is optional and if not passed, the component will set the size to 'medium'.
+
+
+<Tabs>
+    <TabItem label="Small">
+        ```tsx
+        <SAvatar size="small" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar size="small" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="Medium">
+        ```tsx
+        <SAvatar size="small" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar size="medium" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="Large">
+    ```tsx
+    <SAvatar size="small" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    ```
+        <SAvatar size="large" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### name
+
+>The component expects a string as a name for the avatar. This prop is optional and if not passed, the component will not render any name.
+
+```tsx
+<SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+```
+<SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+
+### fontColor
+
+>The component expects a string as a font color for the name. This prop is optional and if not passed, the component will set the font color to 'white'.
+
+<Tabs>
+    <TabItem label="Blue">
+        ```tsx
+        <SAvatar fontColor="blue" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar fontColor="blue" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="White">
+        ```tsx
+        <SAvatar fontColor="white" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar fontColor="white" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### fontWeight
+
+>The component expects a string as a bold for the name. This prop is optional and if not passed, the component will set the font weight to 'normal'.
+
+<Tabs>
+    <TabItem label="Bold">
+        ```tsx
+        <SAvatar fontWeight="bold" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar fontWeight="bold" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="Normal">
+        ```tsx
+        <SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+
