@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
-		
+
 		starlight({
 			title: 'SMUL',
 			social: {
@@ -13,13 +13,10 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Quick Start',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Installation', link: '/guides/installation/' },
-					],
+					autogenerate: { directory: 'guides' },
 				},
 				{
-					label: 'Usage',
+					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},
 			],
