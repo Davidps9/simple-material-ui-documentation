@@ -1,0 +1,114 @@
+---
+title: "Simple Switch"
+description: "The documentation of Simple Switch component."
+---
+
+import { Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+
+import { SSwitch } from 'simple-material-ui-library'
+
+:::danger
+Because the documentation and the library are still in development, the component is not yet fully functional.
+:::
+## Calling the component
+
+```tsx
+<SSwitch />
+```
+<SSwitch />
+ ### Size
+> The size of the switch can be changed by passing the `size` prop to the component. The default size is `medium`.
+
+<Tabs>
+    <TabItem label="Small">
+        ```tsx
+        <SSwitch size="small" />
+        ```
+        <SSwitch size="small" />
+
+    </TabItem>
+    <TabItem label="Medium">
+        ```tsx
+        <SSwitch size="medium" />
+        ```
+        <SSwitch size="medium" />
+
+    </TabItem>
+    <TabItem label="Large">
+        ```tsx
+        <SSwitch size="large" />
+        ```
+        <SSwitch size="large" />
+
+    </TabItem>
+</Tabs>
+### Color
+
+> The color of the switch can be changed by passing the `color` prop to the component. The default color is `blue`.
+
+<Tabs>
+    <TabItem label="blue">
+        ```tsx
+        <SSwitch color="blue" />
+        ```
+        <SSwitch color="blue" />
+
+    </TabItem>
+    <TabItem label="green">
+        ```tsx
+        <SSwitch color="green" />
+        ```
+        <SSwitch color="green" />
+
+    </TabItem>
+</Tabs>
+
+### Checked
+> The checked state of the switch can be changed by passing the `checked` prop to the component. The default checked state is `false`.
+
+<Tabs>
+    <TabItem label="Checked">
+        ```tsx
+        <SSwitch checked />
+        ```
+        <SSwitch checked />
+
+    </TabItem>
+    <TabItem label="Unchecked">
+        ```tsx
+        <SSwitch />
+        ```
+        <SSwitch />
+
+    </TabItem>
+</Tabs>
+
+### Disabled
+> The disabled state of the switch can be changed by passing the `disabled` prop to the component. The default disabled state is `false`.
+
+<Tabs>
+    <TabItem label="Disabled">
+        ```tsx
+        <SSwitch disabled />
+        ```
+        <SSwitch disabled />
+
+    </TabItem>
+    <TabItem label="Enabled">
+        ```tsx
+        <SSwitch />
+        ```
+        <SSwitch />
+
+    </TabItem>
+</Tabs>
+
+    ### On Change
+> The `onChange` prop can be used to handle the change event of the switch.
+
+```tsx
+<SSwitch onChange={(e) => console.log(e.target.checked)} />
+```
+
+
+   
