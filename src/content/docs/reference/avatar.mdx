@@ -17,19 +17,46 @@ This component accepts differents props of different types, if they are not pass
   src="https://www.w3schools.com/howto/img_avatar.png"
   alt="Avatar"
   size="medium"
-  name="John Doe"
+  name="John"
 />
 ```
 <SAvatar
   src="https://www.w3schools.com/howto/img_avatar.png"
   alt="Avatar"
   size="medium"
-    name="John Doe"
+    name="John"
 />
 
 ## Props
 
-### src
+### Size
+
+>The component expects a string as a size for the avatar. This prop is optional and if not passed, the component will set the size to ```medium```.
+
+<Tabs>
+    <TabItem label="Small">
+        ```tsx
+        <SAvatar src="https://www.w3schools.com/howto/img_avatar.png" size="small"/>
+        ```
+        <SAvatar src="https://www.w3schools.com/howto/img_avatar.png" size="small"/>
+    </TabItem>
+    <TabItem label="Medium">
+        ```tsx
+        <SAvatar src="https://www.w3schools.com/howto/img_avatar.png" size="medium"/>
+        ```
+        <SAvatar src="https://www.w3schools.com/howto/img_avatar.png" size="medium"/>
+    </TabItem>
+    <TabItem label="Large">
+        ```tsx
+        <SAvatar src="https://www.w3schools.com/howto/img_avatar.png" size="large"/>
+        ```
+        <SAvatar src="https://www.w3schools.com/howto/img_avatar.png" size="large"/>
+    </TabItem>
+</Tabs>
+
+
+
+### Src
 
 >The component expects a string as a source for the image. This prop is optional and if not passed, the component will not render any image.
 
@@ -38,7 +65,7 @@ This component accepts differents props of different types, if they are not pass
 ```
 <SAvatar src="https://www.w3schools.com/howto/img_avatar.png"/>
 
-### alt
+### Alt
 
 >The component expects a string as an alt for the image. This prop is optional and if not passed, the component will not render any alt.
 
@@ -47,9 +74,9 @@ This component accepts differents props of different types, if they are not pass
 ```
 <SAvatar alt="Avatar"/>
 
-### size
+### Size
 
->The component expects a string as a size for the avatar. This prop is optional and if not passed, the component will set the size to 'medium'.
+>The component expects a string as a size for the avatar. This prop is optional and if not passed, the component will set the size to ```medium```.
 
 
 <Tabs>
@@ -73,51 +100,191 @@ This component accepts differents props of different types, if they are not pass
     </TabItem>
 </Tabs>
 
-### name
+### Name
 
 >The component expects a string as a name for the avatar. This prop is optional and if not passed, the component will not render any name.
 
 ```tsx
-<SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+<SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
 ```
-<SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+<SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
 
-### fontColor
+### Font Color
 
->The component expects a string as a font color for the name. This prop is optional and if not passed, the component will set the font color to 'white'.
+>The component expects a string as a font color for the name. This prop is optional and if not passed, the component will set the font color to ```white```.
 
 <Tabs>
     <TabItem label="Blue">
         ```tsx
-        <SAvatar fontColor="blue" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar fontColor="blue" name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
         ```
-        <SAvatar fontColor="blue" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar fontColor="blue" name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
     </TabItem>
     <TabItem label="White">
         ```tsx
-        <SAvatar fontColor="white" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar fontColor="white" name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
         ```
-        <SAvatar fontColor="white" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar fontColor="white" name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
     </TabItem>
 </Tabs>
 
-### fontWeight
+### Font Weight
 
->The component expects a string as a bold for the name. This prop is optional and if not passed, the component will set the font weight to 'normal'.
+>The component expects a string as a bold for the name. This prop is optional and if not passed, the component will set the font weight to ```normal```.
 
 <Tabs>
     <TabItem label="Bold">
         ```tsx
-        <SAvatar fontWeight="bold" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar fontWeight="bold" name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
         ```
-        <SAvatar fontWeight="bold" name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar fontWeight="bold" name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
     </TabItem>
     <TabItem label="Normal">
         ```tsx
-        <SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
         ```
-        <SAvatar name="John Doe" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
     </TabItem>
 </Tabs>
 
+### Uppercase
 
+>The component expects a boolean as an uppercase for the name. This prop is optional and if not passed, the component will set the uppercase to ```false```.
+
+<Tabs>
+    <TabItem label="true">
+        ```tsx
+        <SAvatar uppercase name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar uppercase name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="false">
+        ```tsx
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### Block
+
+This prop set to true makes the avatar a block element instead of an inline element.
+
+>The component expects a boolean as a block for the avatar. This prop is optional and if not passed, the component will set the block to ```false```.
+
+<Tabs>
+    <TabItem label="true">
+```tsx
+<SAvatar block name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+<SAvatar block name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+
+```
+<SAvatar block name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+
+<SAvatar block name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="false">
+```tsx
+<SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+<SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+```
+<SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+<SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### Border
+
+>The component expects a boolean as a border for the avatar. This prop is optional and if not passed, the component will set the border to ```false```.
+
+<Tabs>
+    <TabItem label="true">
+        ```tsx
+
+        <SAvatar border name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar border name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="false">
+        ```tsx
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### Border Color
+
+>The component expects a string as a border color for the avatar. This prop is optional and if not passed, the component will set the border color to ```white```.
+
+<Tabs>
+    <TabItem label="Blue">
+        ```tsx
+        <SAvatar borderColor="blue" border name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar borderColor="blue" border name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="White">
+        ```tsx
+        <SAvatar borderColor="white" border name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar borderColor="white" border name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### Hoverable
+
+>The component expects a boolean as a hoverable for the avatar. This prop is optional and if not passed, the component will set the hoverable to ```false```.
+
+<Tabs>
+    <TabItem label="true">
+        ```tsx
+        <SAvatar hoverable name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar hoverable name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="false">
+        ```tsx
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### Focusable
+
+>The component expects a boolean as a focusable for the avatar. This prop is optional and if not passed, the component will set the focusable to ```false```.
+
+<Tabs>
+    <TabItem label="true">
+        ```tsx
+        <SAvatar focusable name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar focusable name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="false">
+        ```tsx
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
+
+### Rounded
+
+>The component expects a boolean as a rounded for the avatar. This prop is optional and if not passed, the component will set the rounded to ```true```.
+
+<Tabs>
+    <TabItem label="true">
+        ```tsx
+        <SAvatar rounded name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar rounded name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+    <TabItem label="false">
+        ```tsx
+        <SAvatar rounded={false} name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+        ```
+        <SAvatar rounded={false} name="John" src="https://www.w3schools.com/howto/img_avatar.png"/>
+    </TabItem>
+</Tabs>
