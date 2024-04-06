@@ -8,7 +8,6 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [starlight({
     title: 'SMUL',
-    customCss: ['./src/tailwind.css',],
     social: {
       github: 'https://github.com/davidps9/ui-library'
     },
@@ -27,7 +26,5 @@ export default defineConfig({
         { label: 'Types', link: '/reference/proptypes' },
       ]
     }]
-  }), react(), tailwind({
-    applyBaseStyles: false,
-  })]
+  }), react(), tailwind({})]
 });
