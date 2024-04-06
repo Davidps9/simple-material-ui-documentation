@@ -19,9 +19,13 @@ export default defineConfig({
       }
     }, {
       label: 'Usage',
-      autogenerate: {
-        directory: 'reference'
-      }
+      items: [
+        { label: 'Simple Button', link: '/reference/button' },
+        { label: 'Simple Avatar', link: '/reference/avatar' },
+        { label: 'Simple Card', link: '/reference/card' },
+        { label: 'Simple Switch', link: '/reference/switch' },
+        { label: 'Types', link: '/reference/proptypes' },
+      ]
     }]
   }), react(), tailwind({
     applyBaseStyles: false,
