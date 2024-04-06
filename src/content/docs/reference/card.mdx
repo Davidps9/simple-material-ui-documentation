@@ -1,0 +1,163 @@
+---
+title: "Simple Card"
+description: "SCard component documentation."
+---
+import { Tabs, TabItem, Steps } from '@astrojs/starlight/components';
+
+import { SCard } from 'simple-material-ui-library'
+
+## Calling the component
+
+```tsx
+<SCard  title="This is the title" subtitle="This is the subtitle" image="image-path" />
+```
+<SCard title="This is the title" subtitle="This is the subtitle" image="../../src/assets/blue-drag.png" />
+
+## Props
+
+### Size
+> The size of the card, the component expects a string and if it is not passed, its default value is ```medium```
+
+<Tabs>
+    <TabItem label="Small">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  size="small" text="This is the text" />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  size="small" text="This is the text"  />
+    </TabItem>
+    <TabItem label="Medium">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  size="medium" text="This is the text" />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  size="medium" text="This is the text"  />
+    </TabItem>
+    <TabItem label="Large">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  size="large" text="This is the text" />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  size="large" text="This is the text" />
+    </TabItem>
+</Tabs>
+
+
+### Title
+> The title of the card, the component expects a string and if it is not passed it will not be rendered
+
+```tsx
+<SCard  title="This is the title" />
+```
+<SCard title="This is the title" />
+
+### Subtitle
+> The subtitle of the card, the component expects a string and if it is not passed it will not be rendered
+
+```tsx
+<SCard  subtitle="This is the subtitle" />
+```
+<SCard subtitle="This is the subtitle" />
+
+### Image
+> The image of the card, the component expects a string, representing the path to the image, and if it is not passed it will not be rendered
+
+```tsx
+<SCard  image="image-path" />
+```
+<SCard image="../../src/assets/blue-drag.png" />
+
+### Text
+> The text of the card, the component expects a string and if it is not passed it will not be rendered
+
+```tsx
+<SCard title="This is the title" subtitle="This is the subtitle"  text="This is the text" />
+```
+<SCard title="This is the title" subtitle="This is the subtitle"  text="This is the text" />
+
+### Rounded
+> The rounded of the card, the component expects a boolean and if it is not passed, its default value is ```true```
+
+<Tabs>
+    <TabItem label="Rounded">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  rounded={true} />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  rounded={true} />
+    </TabItem>
+    <TabItem label="Not Rounded">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  rounded={false} />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  rounded={false} />
+    </TabItem>
+</Tabs>
+
+### Hoverable
+> The hoverable of the card, the component expects a boolean and if it is not passed, its default value is ```true```
+
+<Tabs>
+    <TabItem label="Hoverable">
+        ```tsx
+        <SCard title="This  card is hoverablee" subtitle="This card is hoverable"  hoverable={true} />
+        ```
+        <SCard title="This card is hoverable" subtitle="This card is hoverable"  hoverable={true} />
+    </TabItem>
+    <TabItem label="Not Hoverable">
+        ```tsx
+        <SCard title="This card isn't hoverable" subtitle="This card isn't hoverable"  hoverable={false} />
+        ```
+        <SCard title="This card isn't hoverable" subtitle="This card isn't hoverable"  hoverable={false} />
+    </TabItem>
+</Tabs>
+
+### Background Color
+> The background color of the card, the component expects a string and if it is not passed, its default value is ```black```
+
+<Tabs>
+    <TabItem label="Black">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  backgroundColor="black" />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  backgroundColor="black" />
+    </TabItem>
+    <TabItem label="Blue">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  backgroundColor="blue" />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  backgroundColor="blue" />
+    </TabItem>
+</Tabs>
+
+### Text Color
+> The text color of the card, the component expects a string and if it is not passed, its default value is ```white```
+
+<Tabs>
+    <TabItem label="White">
+        ```tsx
+        <SCard text="This text is white" textColor="white" />
+        ```
+        <SCard text="This text is white" textColor="white" />
+    </TabItem>
+    <TabItem label="Red">
+        ```tsx
+        <SCard text="This text is red" textColor="red" />
+        ```
+        <SCard text="This text is red" textColor="red" />
+    </TabItem>
+</Tabs>
+
+### Limit text
+> The limit text of the card, the component expects a number and if it is not passed, its default value is unlimited. This prop adds ```...``` at the end of the text if its passed a number greater than 0.
+
+<Tabs>
+    <TabItem label="Unlimited">
+        ```tsx
+        <SCard text="This text is unlimited" limitText={0} />
+        ```
+        <SCard text="This text is unlimited" limitText={0} />
+    </TabItem>
+    <TabItem label="Limited">
+        ```tsx
+        <SCard text="This text is limited" limitText={10} />
+        ```
+        <SCard text="This text is limited" limitText={10} />
+    </TabItem>
+</Tabs>
