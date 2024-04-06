@@ -4,16 +4,15 @@ description: Types for the all the components.
 ---
 
 
-## Types
 
 ### Colors
-Here is the list of all the colors that can be used with all the color related props like [font](#FontColor) and [border](#BorderColor) color props:
+Here is the list of all the colors that can be used with all the color related props like [font](/reference/button/#fontColor) and [border](/reference/avatar/#avatar) color props:
 ```tsx
 "blue" | "red" | "green" | "yellow" | "gray" | "black" | "white" | "purple" | "pink" | "indigo" | "teal" | "cyan" | "orange" | "amber" | "lime" | "emerald" | "rose" | "fuchsia" | "violet" | "lightBlue" | "sky" | "cyan" | "coolGray" | "trueGray" | "warmGray" | "blueGray" | "orange" | "amber" | "lime" | "emerald" | "rose" | "fuchsia" | "violet" | "lightBlue" | "sky" | "cyan" | "coolGray" | "trueGray" | "warmGray" | "blueGray" | "orange" | "amber" | "lime" | "emerald" | "rose" | "fuchsia" | "violet" | "lightBlue" | "sky" | "cyan" | "coolGray" | "trueGray" | "warmGray" | "blueGray" | "orange" | "amber" | "lime" | "emerald" | "rose" | "fuchsia" | "violet" | "lightBlue" | "sky" | "cyan" | "coolGray" | "trueGray" | "warmGray" | "blueGray" | "orange" | "amber" | "lime" | "emerald" | "rose" | "fuchsia" | "violet" | "lightBlue" | "sky" | "cyan" | "coolGray" | "trueGray" | "warmGray" | "blueGray" | "orange" | "amber" | "lime" | "emerald" | "rose" | "fuchsia" | "violet" | "lightBlue" | "sky" | "cyan" | "coolGray" | "trueGray" | "warmGray" | "blueGray" | "orange" | "amber" | "lime" | "emerald" | "rose" | "fuchsia" | "violet" | "lightBlue" | "sky" | "cyan" | "coolGray" | "trueGray" | "warmGray" | "blueGray" | "orange";
 ```
 
 ### Sizes
-Here is the list of all the sizes that can be used with the [size](#Sizes) prop:
+Here is the list of all the sizes that can be used with the size, which is the same for all the components:
 ```tsx
 "small" | "medium" | "large";
 ```
@@ -25,7 +24,34 @@ Here is the list of all the variants that can be used with the [variant](/refere
 ```
 
 ### Rounded
-Here is the list of all the values that can be used with the [rounded](#Rounded) prop:
+Here is the list of all the values that can be used with the [rounded](#/reference/button/#rounded) prop:
 ```tsx
 true | false;
+```
+
+### Src
+
+Here is the type for the `src` prop that can be used with the [Avatar](/reference/avatar/#src) component:
+```tsx
+string;
+```
+
+### Bold
+Here is the type for the `bold` prop that can be used with the [Avatar](/reference/avatar/#bold) component:
+```tsx
+true | false;
+```
+
+### Font Weight
+
+Here is the type for the `fontWeight` prop that can be used with the [Avatar](/reference/avatar/#fontWeight) component:
+```tsx
+"thin" | "extralight" | "light" | "normal" | "medium" | "semibold" | "bold" | "extrabold" | "black" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900"
+```
+
+### Limit text
+
+Here is the type for the `limit` prop that can be used with the [Card](/reference/card/#limit-text) component:
+```tsx
+number;
 ```
