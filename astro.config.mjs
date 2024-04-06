@@ -8,6 +8,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [starlight({
     title: 'SMUL',
+    favicon: '/blue-drag.png',
     social: {
       github: 'https://github.com/davidps9/ui-library'
     },
