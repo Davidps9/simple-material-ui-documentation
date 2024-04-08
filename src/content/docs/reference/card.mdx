@@ -39,6 +39,29 @@ import { SCard } from 'simple-material-ui-library'
     </TabItem>
 </Tabs>
 
+### Variant
+>The type of card, the component expects one of three values, elevated, filled or outlined and if not passed, its value is set to `filled`
+
+<Tabs>
+    <TabItem label="elevated">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  variant="elevated" text="This is the text" />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  variant="elevated"  text="This is the text"  />
+    </TabItem>
+    <TabItem label="filled">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  variant="filled"  text="This is the text" />
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  variant="filled"  text="This is the text"  />
+    </TabItem>
+    <TabItem label="outlined">
+        ```tsx
+        <SCard title="This is the title" variant="outlined" subtitle="This is the subtitle"  borderColor="gray" text="This is the text" />
+        ```
+        <SCard title="This is the title" variant="outlined" subtitle="This is the subtitle"  borderColor="gray" text="This is the text" />
+    </TabItem>
+</Tabs>
 
 ### Title
 > The title of the card, the component expects a string and if it is not passed it will not be rendered
@@ -109,7 +132,7 @@ import { SCard } from 'simple-material-ui-library'
 </Tabs>
 
 ### Background Color
-> The background color of the card, the component expects a string and if it is not passed, its default value is ```black```
+> The background color of the card, the component expects a Color type prop and if it is not passed, its default value is ```black```
 
 <Tabs>
     <TabItem label="Black">
@@ -125,6 +148,54 @@ import { SCard } from 'simple-material-ui-library'
         <SCard title="This is the title" subtitle="This is the subtitle"  backgroundColor="blue" />
     </TabItem>
 </Tabs>
+
+
+
+### Border Color
+:::caution 
+This prop only works if the variant prop is set to `outlined`
+:::
+
+> The border color of the card, the component expects a Color type prop and if it is not passed, its default value is ```black```
+<Tabs>
+    <TabItem label="white">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  borderColor="white" variant="outlined"/>
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  borderColor="white" variant="outlined"/>
+    </TabItem>
+    <TabItem label="Blue">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  borderColor="blue" variant="outlined"/>
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  borderColor="blue" variant="outlined"/>
+    </TabItem>
+</Tabs>
+
+### Shadow Color
+:::caution 
+This prop only works if the variant prop is set to `elevated`
+:::
+
+> The shadow color of the card, the component expects a Color type prop and if it is not passed, its default value is ```black```
+
+<Tabs>
+    <TabItem label="blue">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  shadowColor="blue" variant="elevated"/>
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  shadowColor="blue" variant="elevated"/>
+    </TabItem>
+    <TabItem label="red">
+        ```tsx
+        <SCard title="This is the title" subtitle="This is the subtitle"  shadowColor="red" variant="elevated"/>
+        ```
+        <SCard title="This is the title" subtitle="This is the subtitle"  shadowColor="red" variant="elevated"/>
+    </TabItem>
+
+</Tabs>
+
+
 
 ### Text Color
 > The text color of the card, the component expects a string and if it is not passed, its default value is ```white```
